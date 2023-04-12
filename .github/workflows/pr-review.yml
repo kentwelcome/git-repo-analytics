@@ -25,7 +25,7 @@ jobs:
         run: |
           url=${{ env.GIT_REPO_URL }}
           git clone $url git_repo
-          git config --global --add safe.directory '*'
+          git config --global --add safe.directory /github/workspace/git_repo
         env:
           GIT_REPO_URL: https://github.com/kubernetes/kubernetes.git # You can change this to any other repo
 
