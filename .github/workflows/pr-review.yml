@@ -26,6 +26,8 @@ jobs:
           url=${{ env.GIT_REPO_URL }}
           git clone $url git_repo
           git config --global --add safe.directory /github/workspace/git_repo
+          pip install duckdb==0.6.1
+          python read_git_repo.py
         env:
           GIT_REPO_URL: https://github.com/kubernetes/kubernetes.git # You can change this to any other repo
 
