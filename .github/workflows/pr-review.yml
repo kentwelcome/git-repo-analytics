@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+      contents: read
     steps:
       - uses: actions/checkout@v3
         with:
@@ -31,4 +32,4 @@ jobs:
           GIT_REPO_URL: https://github.com/kubernetes/kubernetes.git # You can change this to any other repo
 
       - name: PipeRider Compare
-        uses: InfuseAI/piperider-compare-action@v1
+        uses: InfuseAI/piperider-compare-action@v1.1.0-beta
