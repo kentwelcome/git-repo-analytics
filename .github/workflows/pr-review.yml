@@ -33,4 +33,5 @@ jobs:
 
       - name: PipeRider Compare
         uses: InfuseAI/piperider-compare-action@v1
+        with:
           piperider_version: 0.24.1
