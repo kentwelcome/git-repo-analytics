@@ -32,6 +32,5 @@ jobs:
           GIT_REPO_URL: https://github.com/kubernetes/kubernetes.git # You can change this to any other repo
 
       - name: PipeRider Compare
-        uses: InfuseAI/piperider-compare-action@v1.1.0-beta
-        with:
+        uses: InfuseAI/piperider-compare-action@v1
           piperider_version: 0.24.1
