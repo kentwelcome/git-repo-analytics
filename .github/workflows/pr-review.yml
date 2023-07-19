@@ -28,6 +28,7 @@ jobs:
           git clone $url git_repo
           pip install -r requirements.txt
           python read_git_repo.py
+          dbt deps
         env:
           GIT_REPO_URL: https://github.com/kubernetes/kubernetes.git # You can change this to any other repo
 
